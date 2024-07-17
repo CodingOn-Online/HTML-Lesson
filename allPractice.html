@@ -1,11 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>나만의 페이지 만들기</title>
+  </head>
+  <body>
+    <h1>🎶오울이 홈페이지 입니다🎶</h1>
+    <nav>
+      <strong>Menu</strong>
+      <ul>
+        <li><a href="#">홈으로</a></li>
+        <li>
+          <a
+            href="https://blog.naver.com/spreatics2/223446339575?trackingCode=rss"
+            >오울이 블로그</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <h2>💕오울이 소개</h2>
+    <img src="./기쁜오울.webp" width="100px" alt="기쁜오울" />
+    <p>
+      안녕하세요 <span style="color: goldenrod">오울이</span>입니다! <br />
+      오울이의 페이지에 오신 것을 환영해요!
+    </p>
+    <iframe
+      width="280"
+      height="315"
+      src="https://www.youtube.com/embed/suVBADdAtdM?&autoplay=1&mute=1&loop=1&playlist=suVBADdAtdM"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+    <span>이 동영상은 제가 좋아하는 빗소리를 듣고 있어요~</span>
+    <h3>1. 오울이의 좋아하는 음식</h3>
+    <ol>
+      <li>
+        양식
+        <ul>
+          <li>스파게티</li>
+          <li>피자</li>
+        </ul>
+      </li>
+      <li>
+        한식
+        <ul>
+          <li>김치찌개</li>
+          <li>치킨</li>
+        </ul>
+      </li>
+      <li>
+        일식
+        <ul>
+          <li>초밥</li>
+          <ul>
+            <li>연어초밥</li>
+            <li>계란초밥</li>
+            <li>참치초밥</li>
+          </ul>
+          <li>텐동</li>
+        </ul>
+      </li>
+    </ol>
+
+    <h3>2. 오울이의 취미생활</h3>
+
+    <table border="1" cellspacing="0">
+      <caption style="color: blue">
+        오울이의 취미 기록
+      </caption>
+      <thead>
+        <tr>
+          <th>취미생활</th>
+          <th>세부항목</th>
+          <th>사진</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="3">오울이의 여행</td>
+          <td>뉴욕 여행</td>
+          <td>
+            <img
+              src="./allPractice_newyork.jpg"
+              width="300px"
+              height="180px"
+              alt="newyork"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>산토리니 여행</td>
+          <td>
+            <img
+              src="./allPractice_santorini.jpg"
+              width="300px"
+              height="180px"
+              alt="santorini"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>뉴욕 여행</td>
+          <td>
+            <img
+              src="./allPractice_hagia-sophia.jpg"
+              width="300px"
+              height="180px"
+              alt="turkey"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>오울이의 크루 케어</td>
+          <td>수료식</td>
+          <td>
+            <img
+              src="./allPractice_2.png"
+              width="300px"
+              height="180px"
+              alt=""
+            />
+          </td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3">저의 취미생활 구경 잘 하셨나요?😊</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <h2>📢오울이에게 한마디</h2>
+    <form style="width: 700px">
+      <fieldset>
+        <legend>작성자 기본 정보</legend>
+
+        <label for="name">이름 : </label>
+        <input type="text" id="name" />
+        <br />
+        성별 :
+        <input type="radio" name="gender" id="female" value="여성" />
+        <label for="female">여성</label>
+        <input type="radio" name="gender" id="male" value="남성" />
+        <label for="male">남성</label>
+        <br />
+        취미 (중복 선택 가능) :
+        <input type="checkbox" value="여행" id="여행" />
+        <label for="여행">여행</label>
+        <input type="checkbox" value="뜨개질" id="뜨개질" />
+        <label for="뜨개질">뜨개질</label>
+        <input type="checkbox" value="독서" id="독서" />
+        <label for="독서">독서</label>
+        <input type="checkbox" value="게임" id="게임" />
+        <label for="게임">게임</label>
+        <br />
+        <label for="color">좋아하는 색 : </label>
+        <input type="color" id="color" />
+      </fieldset>
+      <fieldset>
+        <legend>오울이에게 짧은 한 마디</legend>
+        <input type="text" style="width: 600px" />
+      </fieldset>
+      <br />
+      <button>제출</button>
+    </form>
+
+    <div>
+      🤗오울이에 대해 더 알고 싶다면
+      <a
+        href="https://www.youtube.com/channel/UCbXfU4Yxgpxygfmrm0CRB1w"
+        target="_blank"
+        >유튜브
+      </a>
+      에 방문해주세요~
+    </div>
+  </body>
 </html>
